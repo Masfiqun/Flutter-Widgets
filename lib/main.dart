@@ -32,7 +32,7 @@ class _WidgetState extends State<Widget> {
       child: Scaffold(
         body: Center(
           child: ClipRRect(
-            borderRadius: BorderRadius.circular(50),
+            borderRadius: BorderRadius.circular(40),
             child: Image.network('https://picsum.photos/250?image=9'),
           ),
         )
