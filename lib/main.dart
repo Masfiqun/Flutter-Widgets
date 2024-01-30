@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_widgets/ClipRRect.dart';
 import 'package:flutter_widgets/Column.dart';
+import 'package:flutter_widgets/Divider.dart';
 import 'package:flutter_widgets/Row.dart';
 import 'package:flutter_widgets/SafeArea.dart';
 import 'package:flutter_widgets/SizedBox.dart';
@@ -19,9 +20,10 @@ class MyApp extends StatelessWidget {
   MaterialApp build(BuildContext context) {
     return MaterialApp(
       home: 
+      // divider(),
       // safearea(),
       // sizedbox(),
-      // text(),
+       text(),
       // roow(),
       // col(),
       // clip(),

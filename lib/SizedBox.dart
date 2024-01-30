@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors, camel_case_types
+
 import 'package:flutter/material.dart';
 
 class sizedbox extends StatefulWidget {
@@ -12,8 +14,8 @@ class _sizedboxState extends State<sizedbox> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SizedBox(     // A roundish rectangular shape will form by using this Widget.
-        height: 50,
-        width: 50,
+        height: 100,
+        width: 100,
       ),
     );
   }

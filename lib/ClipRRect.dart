@@ -14,8 +14,9 @@ class _clipState extends State<clip> {
       child: Scaffold(
         body: Center(
           child: ClipRRect(
-            borderRadius: BorderRadius.circular(40), //how much round you want to make the image border
-            child: Image.network('https://picsum.photos/250?image=9'), //way to input a picture 
+            clipBehavior: Clip.none,                                          // Controls how to clip                      
+            borderRadius: BorderRadius.circular(40),                          // The border radius of the rounded corners
+            child: Image.network('https://picsum.photos/250?image=9'),        // Child- The widget below this widget in the tree
           ),
         )
       )

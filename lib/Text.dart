@@ -11,7 +11,14 @@ class _textState extends State<text> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Text('Put your data here. You will have to put the data in Strings.'),
+      body: SafeArea(
+        child: Text(
+          'Put your data here. You will have to put the data in Strings.', 
+          textAlign: TextAlign.center,
+          textDirection: TextDirection.rtl,
+          overflow: TextOverflow.visible,
+        ),
+      ),
     );
   }
 }
