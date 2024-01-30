@@ -1,6 +1,12 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
+import 'package:flutter_widgets/ClipRRect.dart';
+import 'package:flutter_widgets/Column.dart';
+import 'package:flutter_widgets/Row.dart';
+import 'package:flutter_widgets/SafeArea.dart';
+import 'package:flutter_widgets/SizedBox.dart';
+import 'package:flutter_widgets/Text.dart';
 
 void main(){
   runApp(const MyApp());
@@ -12,31 +18,14 @@ class MyApp extends StatelessWidget {
   @override
   MaterialApp build(BuildContext context) {
     return MaterialApp(
-      home: Widget(),
-      debugShowCheckedModeBanner: false,
+      home: 
+      // safearea(),
+      // sizedbox(),
+      // text(),
+      // roow(),
+      // col(),
+      // clip(),
     );
   }
 }
 
-class Widget extends StatefulWidget {
-  const Widget({super.key});
-
-  @override
-  State<Widget> createState() => _WidgetState();
-}
-
-class _WidgetState extends State<Widget> {
-  @override
-  SafeArea build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
-        body: Center(
-          child: ClipRRect(
-            borderRadius: BorderRadius.circular(40),
-            child: Image.network('https://picsum.photos/250?image=9'),
-          ),
-        )
-      )
-    );
-  }
-}
