@@ -1,3 +1,5 @@
+// ignore_for_file: camel_case_types, prefer_const_constructors, file_names
+
 import 'package:flutter/material.dart';
 
 class floatingbutton extends StatefulWidget {
