@@ -35,7 +35,7 @@ class _Linear_Progress_IndicatorState extends State<Linear_Progress_Indicator> w
       body: Padding(
         padding: const EdgeInsets.all(20.0),
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             Text('Linear_Progress_Indicator'),
             LinearProgressIndicator(
@@ -43,6 +43,8 @@ class _Linear_Progress_IndicatorState extends State<Linear_Progress_Indicator> w
               valueColor: AlwaysStoppedAnimation<Color>(Colors.tealAccent),
               value: controller.value,
             ),
+            LinearProgressIndicator(),
+            
           ],
         ),
       )
