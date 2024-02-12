@@ -8,20 +8,36 @@ class Elevated_Button extends StatefulWidget {
 }
 
 class _Elevated_ButtonState extends State<Elevated_Button> {
-  @override
-  Widget build(BuildContext context) {
-    ButtonStyle buttonStyle = ElevatedButton.styleFrom(
+  ButtonStyle buttonStyle = ElevatedButton.styleFrom(
       textStyle: TextStyle(
         fontSize: 10, 
         fontStyle: FontStyle.italic,
-        fontWeight: FontWeight.bold
+        fontWeight: FontWeight.bold,
+        
+        
       )
     );
-    return Center(
-      child: ElevatedButton(
-        onPressed: (){}, 
-        child: Text('Elevated button'),
-        style: buttonStyle,
+  @override
+  Widget build(BuildContext context) {
+    
+    return Scaffold(
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            ElevatedButton(
+              onPressed: (){}, 
+              child: Text('Elevated button'),
+              style: buttonStyle,
+            ),
+            SizedBox(),
+            ElevatedButton(
+              onPressed: null, 
+              child: Text('Elevated button'),
+              style: buttonStyle,
+            ),
+          ],
+        ),
       ),
     );
   }
