@@ -19,6 +19,7 @@ import 'package:flutter_widgets/Slider&Indicator.dart';
 import 'package:flutter_widgets/PopMenuButton.dart';
 import 'package:flutter_widgets/ExpansionPanel.dart';
 import 'package:flutter_widgets/TabBar.dart';
+import 'package:flutter_widgets/Stepping.dart';
 
 
 void main(){
@@ -49,7 +50,8 @@ class MyApp extends StatelessWidget {
       // SI(),
       // PopMenuButton(),
       // Expansion(),
-      TebBar(),
+      // TebBar(),
+      StepProgressor(),
     );
   }
 }
