@@ -14,6 +14,7 @@ import 'package:flutter_widgets/SizedBox.dart';
 import 'package:flutter_widgets/Text.dart';
 import 'package:flutter_widgets/Tooltip.dart';
 import 'package:flutter_widgets/Dropdown_Button.dart';
+import 'package:flutter_widgets/chipsAdding.dart';
 
 void main(){
   runApp(const MyApp());
@@ -32,13 +33,14 @@ class MyApp extends StatelessWidget {
       // Elevated_Button(),
       // DropdownButtonExample(),
       // TooltipSample(),
-       divider(),
+      //divider(),
       // safearea(),
       // sizedbox(),
       // text(),
       // roow(),
       // col(),
       // clip(),
+      chipsAdding(),
     );
   }
 }
