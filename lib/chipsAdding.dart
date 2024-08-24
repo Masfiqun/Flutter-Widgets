@@ -35,7 +35,7 @@ class _chipsAddingState extends State<chipsAdding> {
       child: new Chip(
         label: new Text('${i} Name here'),
         deleteIconColor: Colors.red,
-        deleteButtonTooltipMessage: 'Deleted',
+        deleteButtonTooltipMessage: 'Delete',
         onDeleted: () => _removedItem(key),
         avatar: new CircleAvatar(
           backgroundColor: Colors.tealAccent,
