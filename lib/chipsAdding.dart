@@ -14,6 +14,7 @@ class _chipsAddingState extends State<chipsAdding> {
 
   @override
   void initState(){
+    super.initState();
     for(int i=0; i<5; i++){
       Widget child = _newItem(i);
       _list.add(child);
