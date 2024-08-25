@@ -1,0 +1,9 @@
+appBar: AppBar(
+        title: Center(
+          child: Text(
+                  'Bar Graph',
+                  style: TextStyle(fontFamily: 'Stromlight'),
+                  ),
+                ),
+        backgroundColor: Colors.teal[100],
+      ),
