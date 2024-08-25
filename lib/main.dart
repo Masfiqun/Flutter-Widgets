@@ -22,6 +22,7 @@ import 'package:flutter_widgets/ExpansionPanel.dart';
 import 'package:flutter_widgets/TabBar.dart';
 import 'package:flutter_widgets/Stepping.dart';
 import 'package:flutter_widgets/Charts/Bar Graph/home_page.dart';
+import 'package:flutter_widgets/Switch/toogle_switch.dart';
 
 
 void main(){
@@ -54,7 +55,8 @@ class MyApp extends StatelessWidget {
       // Expansion(),
       // TebBar(),
       // StepProgressor(),
-         Homepage(),
+      // Homepage(),
+      toogle_switch()
     );
   }
 }
