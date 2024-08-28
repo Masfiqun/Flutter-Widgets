@@ -18,18 +18,21 @@ class H3 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        Padding(
-          padding: EdgeInsets.all(32.0),
-          child: Text(duration.toString(), style: TextStyle(fontSize: 32, color: color),),
-        ),
-        IconButton(
-          onPressed: onClicked, 
-          icon: Icon(Icons.clear)
-        )
-      ],
+    return Container(
+      color: Colors.blue[50],
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Padding(
+            padding: EdgeInsets.all(32.0),
+            child: Text(duration.toString(), style: TextStyle(fontSize: 32, color: color),),
+          ),
+          IconButton(
+            onPressed: onClicked, 
+            icon: Icon(Icons.clear)
+          )
+        ],
+      ),
     );
   }
 }

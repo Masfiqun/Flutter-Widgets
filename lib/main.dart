@@ -15,6 +15,7 @@ import 'package:flutter_widgets/SizedBox.dart';
 import 'package:flutter_widgets/Text.dart';
 import 'package:flutter_widgets/Tooltip.dart';
 import 'package:flutter_widgets/Dropdown_Button.dart';
+import 'package:flutter_widgets/Widgets/Authenticator/Main.dart';
 import 'package:flutter_widgets/chipsAdding.dart';
 import 'package:flutter_widgets/Slider&Indicator.dart';
 import 'package:flutter_widgets/PopMenuButton.dart';
@@ -60,7 +61,7 @@ class MyApp extends StatelessWidget {
       // Homepage(),
       // toogle_switch()
       // advanced_switch()
-      MyWidget()
+      Auth()
     );
   }
 }

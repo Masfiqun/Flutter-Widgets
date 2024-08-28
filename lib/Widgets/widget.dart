@@ -1,6 +1,10 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
+import 'package:flutter_widgets/Widgets/Authenticator/Main.dart';
 import 'package:flutter_widgets/Widgets/H1.dart';
 import 'package:flutter_widgets/Widgets/H2_clock.dart';
+import 'package:flutter_widgets/Widgets/timeCounter.dart';
 
 class MyWidget extends StatefulWidget {
   const MyWidget({super.key});
@@ -28,10 +32,12 @@ class _MyWidgetState extends State<MyWidget> {
         child: Center(
           child: Column(
             children: [
-              Text('Add Widget Here'),
-              SizedBox(height: 10,),
-              H1(),
-              H2_clock()
+              // Text('Add Widget Here'),
+              // SizedBox(height: 10,),
+              // H1(),
+              // H2_clock(),
+              // timer_counter(),
+              Auth()
             ],
           ),
         ),
