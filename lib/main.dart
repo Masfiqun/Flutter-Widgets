@@ -41,10 +41,10 @@ class MyApp extends StatelessWidget {
   @override
   MaterialApp build(BuildContext context) {
     return MaterialApp(
-      title: 'Navigation',
-      routes: <String, WidgetBuilder>{
-        '/Second': (BuildContext contrext) => Second()
-      },
+      // title: 'Navigation',
+      // routes: <String, WidgetBuilder>{
+      //   '/Second': (BuildContext contrext) => Second()
+      // },
       home: 
       // circular_Progress_indicator()
       //Linear_Progress_Indicator(),
@@ -69,8 +69,8 @@ class MyApp extends StatelessWidget {
       // toogle_switch()
       // advanced_switch()
       // Auth()
-      // Home()
-      BorderRadiusLerpExample()
+      Home()
+      // BorderRadiusLerpExample()
     );
   }
 }

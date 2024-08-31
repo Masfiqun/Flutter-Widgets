@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_widgets/globalState/global_state.dart';
+import 'package:flutter_widgets/globalState/second.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -22,10 +23,16 @@ class _HomeState extends State<Home> {
   }
 
   void onPressed(){
-    setState(() {
-      _store.set('name', _name.text);
-    });
-    Navigator.of(context).pushNamed('/Second');
+    /*For Global State */
+    // setState(() {
+    //   _store.set('name', _name.text);
+    // });
+    // Navigator.of(context).pushNamed('/Second');
+
+    /*For passing variables */
+    Navigator.push(context, MaterialPageRoute(
+      builder: (BuildContext context) => Second(name: _name.text)
+    ));
   }
 
   @override
@@ -34,7 +41,7 @@ class _HomeState extends State<Home> {
       appBar: AppBar(
         title: Center(
           child: Text(
-                  'Global State Example',
+                  'State Management',
                   style: TextStyle(fontFamily: 'Stromlight'),
                   ),
                 ),
