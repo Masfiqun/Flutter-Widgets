@@ -32,6 +32,7 @@ import 'package:flutter_widgets/globalState/second.dart';
 
 
 void main(){
+
   runApp(const MyApp());
 }
 
@@ -45,6 +46,7 @@ class MyApp extends StatelessWidget {
       // routes: <String, WidgetBuilder>{
       //   '/Second': (BuildContext contrext) => Second()
       // },
+
       home: 
       // circular_Progress_indicator()
       //Linear_Progress_Indicator(),
